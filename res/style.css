@@ -1,0 +1,115 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #f5f5dc;
+}
+p{
+    text-align: justify;
+    
+}
+.page{
+    width: 750px;
+    margin:auto;
+    font-family:'Garamond', serif,calibri,Verdana, Geneva, Tahoma, sans-serif,serif;
+    font-size: 16px;
+}
+
+img{
+    height: 450px;
+    width: 400px;
+    border: 5px solid rgb(191, 231, 228);
+   
+}
+a:hover{
+    color:#20B2AA;
+}
+.profile
+{
+    width: 350px;
+    margin-bottom: 60px;
+}
+
+.exp{
+    position: absolute;
+    top:720px;
+    left:800px;
+}
+.educ{
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+header{
+    position: absolute;
+    top: 40px;
+    left: 800px;
+    font-size: 40px;
+    color: #008080;
+}
+span
+{   top:80px ;
+    font-size:70px;
+    color: #20B2AA;
+}
+
+section{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+div{
+    margin-bottom: 10px;
+
+}
+/*
+.educ-info_1{
+    position:absolute;
+    left: 200px;
+    top:50px;
+    width: max-content;
+}
+*/
+.educ-info{
+    font-weight: bold;
+    font-size: 20px;
+}
+.exp-info{
+    font-weight: bold;
+    font-size: 20px;
+}
+div > h2{
+    
+    border-bottom: 3px solid #008080;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 28px;
+    color: #008B8B;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+h4{
+    font-size: 15px;
+    margin-bottom:15px;
+}
+/*
+.exp-desc,.educ-desc{
+    position:absolute;
+    left: 200px;
+    margin-top: 70px;
+}
+*/
+.contact,.exp{
+    display: inline;
+}
+footer p{
+position: absolute;
+left:375px;
+top:1200px ;
+}
+.profile,.contact,.skills{
+margin-bottom: 30px;
+}
