@@ -12,7 +12,7 @@ p{
 .page{
     width: 750px;
     margin:auto;
-    font-family:'Garamond', serif,calibri,Verdana, Geneva, Tahoma, sans-serif,serif;
+    font-family:'roboto', serif,calibri,Verdana, Geneva, Tahoma, sans-serif,serif;
     font-size: 16px;
 }
 
@@ -112,4 +112,7 @@ top:1200px ;
 }
 .profile,.contact,.skills{
 margin-bottom: 30px;
+}
+li{
+margin-left: 20px;
 }
