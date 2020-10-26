@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="javascript.js" async></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!-----------------NavigationBar-------------------->
+   <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">New<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hijab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Outerwear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plus Size</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Swimwear/Sportswear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bags/Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Designers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   </section>
+    <!----------------Slider-------------------->
+    <section>
+     <div id="slider">
+      <div id="headerSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#headerSlider" data-slide-to="1"></li>
+          <li data-target="#headerSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/shopping.jpg" class="d-block img-fluid" alt="first-slide">
+            <div class="carousel-caption">
+              <h5>Online shopping</h5>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="/img/deliver.jpg" class="d-block img-fluid" alt="third-slide">
+            <div class="carousel-caption">
+              <h5>Free delivery</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/hijab.jpg" class="d-block img-fluid" alt="third-slide">
+            <div class="carousel-caption">
+              <h5>Modesty & Elegance </h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+     </div>
+    </section>
+      <!----------------Hijab lists-------------------->
+
+      <div class="grid-container">
+     
+        <div class="row">
+        
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div >
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/3510-home_default/hijab-mousseline-taupe.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  HIJAB MUSLIN TAUPE
+                </h5>
+                <div class="shop-thumb__price">
+            
+                  <span class="shop-thumb__price">$13</span>
+                </div>
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn" class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true">
+
+                </i>Add to cart
+               </button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div>
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/3522-home_default/hijab-mousseline-blanc.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  HIJAB MUSLIN WHITE
+                </h5>
+                <div class="shop-thumb__price">
+                  $13
+                </div>
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn"  class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i class="fa fa-heart" aria-hidden="true"></i>
+                
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div >
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/7134-home_default/jersey-premium-honey.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  JERSEY PREMIUM HONEY
+                </h5>
+                <div class="shop-thumb__price">
+                  $19
+                </div>
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn"  class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i class="fa fa-heart" aria-hidden="true"></i>
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div >
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/6989-home_default/jersey-premium-purple.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  JERSEY PREMIUM PURPLE
+                </h5>
+                <div class="shop-thumb__price">
+                  $19
+                </div>
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn" class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i class="fa fa-heart" aria-hidden="true"></i>
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div >
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/4190-home_default/jersey-premium-olive.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  JERSEY PREMIUM OLIVE
+                </h5>
+                <div class="shop-thumb__price">
+                  $19
+                </div>
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn" class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i onclick="myFunction(this)" class="fa fa-heart" aria-hidden="true"></i>
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+               
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a>
+                <div >
+                  <img class="shop-thumb__img" src="https://www.jennah-boutique.com/4076-home_default/jersey-premium-grappe.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  JERSEY PREMIUM GRAPPE
+                </h5>
+                <div class="shop-thumb__price">
+                  $19
+                  
+        
+                </div> <!-- / .row -->
+                <!-- Hover me! -->
+                <button type="button" id="heart_btn" class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main" data-toggle="tooltip"
+                data-placement="top" title="Add to wishlist"><i class="fa fa-heart" aria-hidden="true"></i>
+                
+                <button type="button" id="Shopping_cart_btn" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+  
+       
+        
+      </div> <!-- / .col-sm-8 -->
+    </div> <!-- / .row -->
+    </div>
+    </div>
+<!-----------------Shopping cart----------------------->
+<table class="table">
+  
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+         <!------------row1-------------->
+  <div class="items">
+    
+      <tr  class="cart-row">
+         
+        <th scope="row">
+        <div class="element">
+            <div class="Product_img">
+                <img src="https://www.jennah-boutique.com/3510-home_default/hijab-mousseline-taupe.jpg" class="img-responsive" alt="...">
+            </div>
+            <h5 class="Poduct__desc">
+                HIJAB MUSLIN TAUPE
+            </h5>
+        </div>   
+        </th>
+        <div class="info">
+        <td class="price"> 
+            <h6>
+            13
+           </h6>
+        </td>
+        <td>
+            <div id="counter">
+                <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp1')"></i>
+                <input id="inp1" class="input-number" type="text" value="1"
+                min="0" max="10">
+                 
+                <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp1')"></i>
+            </div>
+        </td>
+        <td class="total"><h6>
+            13
+           </h6>
+           <div class="Remove">
+            <button type="button" class="btn btn-danger removebtn">Remove</button>
+          </div>
+        </td>
+        </div>
+      </tr>
+   
+  
+      <!------------row2-------------->
+      <tr class="cart-row">
+        
+        <th scope="row">
+            <div class="element">
+                <div class="Product_img">
+                    <img src="https://www.jennah-boutique.com/3522-home_default/hijab-mousseline-blanc.jpg.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="Poduct__desc">
+                    HIJAB MUSLIN WHITE
+                </h5>
+            </div> 
+        </th>
+        <div class="info">
+        <td class="price">
+           <h6>
+            13
+           </h6>
+        </td>
+        <td>
+          <div id="counter">
+            <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp2')"></i>
+            <input id="inp2" class="input-number" type="text" value="1"
+            min="0" max="10">
+             
+            <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp2')"></i>
+        </div>
+        </td>
+        <td class="total"><h6>
+            13
+           </h6>
+           <div class="Remove">
+            <button type="button" class="btn btn-danger removebtn">Remove</button>
+          </div>
+        </td>
+        </div>
+        
+      </tr>
+      <!------------row3-------------->
+      
+      <tr class="cart-row">
+        
+        <th scope="row">
+            <div class="element">
+                <div class="Product_img">
+                    <img src="https://www.jennah-boutique.com/7134-home_default/jersey-premium-honey.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="Poduct__desc">
+                    HIJAB MUSLIN HONEY
+                </h5>
+            </div>
+        </th>
+        <div class="info">
+        <td class="price">
+            <h6>
+            19
+        </h6>
+        </td>
+        <td>
+          <div id="counter">
+            <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp3')"></i>
+            <input id="inp3" class="input-number" type="text" value="1"
+            min="0" max="10">
+             
+            <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp3')"></i>
+        </div>
+        </td>
+        <td class="total"><h6>
+            19
+        </h6>
+        <div class="Remove">
+            <button type="button" class="btn btn-danger removebtn">Remove</button>
+          </div>
+    </td>
+    </div>
+      
+      </tr>
+      <!------------row4-------------->
+      
+      <tr class="cart-row">
+        
+        <th scope="row">
+            <div class="element">
+                <div class="Product_img">
+                    <img src="https://www.jennah-boutique.com/6989-home_default/jersey-premium-purple.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="Poduct__desc">
+                    JERSEY PREMIUM PURPLE
+                </h5>
+            </div>
+        </th>
+        <td class="price">
+            <h6>
+            19
+           </h6>
+        </td>
+        <td>
+          <div id="counter">
+            <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp4')"></i>
+            <input id="inp4" class="input-number" type="text" value="1"
+            min="0" max="10">
+             
+            <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp4')"></i>
+        </div>
+        </td>
+        <td class="total"><h6>  19 </h6>
+            <div class="Remove">
+                <button type="button" class="btn btn-danger removebtn">Remove</button>
+              </div>
+        </td>
+    
+      </tr>
+       <!------------row5-------------->
+       
+      <tr class="cart-row">
+        
+        <th scope="row">
+            <div class="element">
+                <div class="Product_img">
+                    <img src="https://www.jennah-boutique.com/4190-home_default/jersey-premium-olive.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="Poduct__desc">
+                    JERSEY PREMIUM OLIVE
+                </h5>
+            </div>
+        </th>
+        <td class="price">
+          <h6>  19 </h6>
+        </td>
+        <td>
+          <div id="counter">
+            <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp5')"></i>
+            <input id="inp5" class="input-number" type="text" value="1"
+            min="0" max="10">
+             
+            <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp5')"></i>
+        </div>
+        </td>
+        <td class="total"><h6>  19 </h6>
+            <div class="Remove">
+                <button type="button" class="btn btn-danger removebtn">Remove</button>
+              </div>
+        </td>
+       
+      </tr>
+          <!------------row6-------------->
+      <tr class="cart-row">
+        
+       
+        <th scope="row">
+            <div class="element">
+                <div class="Product_img">
+                    <img src="https://www.jennah-boutique.com/4076-home_default/jersey-premium-grappe.jpg" class="img-responsive" alt="...">
+                </div>
+                <h5 class="Poduct__desc">
+                    JERSEY PREMIUM GRAPPE
+                </h5>
+            </div>
+        </th>
+        <td class="price"> <h6> 19 </h6> </td>
+        <td>
+          <div id="counter">
+            <i class="fa fa-angle-down" id="decrement" aria-hidden="true" onclick="decrement('inp6')"></i>
+            <input id="inp6" class="input-number" type="text" value="1"
+            min="0" max="10">
+             
+            <i class="fa fa-angle-up" id="increment" aria-hidden="true" onclick="increment('inp6')"></i>
+        </div>
+        </td>
+        <td class="total"><h6> 19 </h6>
+            <div class="Remove">
+                <button type="button" class="btn btn-danger removebtn">Remove</button>
+              </div>
+        </td>
+      </tr>
+  </div>
+    </tbody>
+  </table>
+  <!-----------Chekout------------>
+  <div class="col-Ig-4 offset-Ig-4">
+    <div class=checkout>
+        <ul>
+            <li>
+                Total 
+                <span id="cart-total">102</span>
+            </li>
+        </ul>
+        <a href="#" class="proceed-btn">Preceed to checkout</a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
