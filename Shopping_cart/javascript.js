@@ -16,24 +16,31 @@ function updateCarteTotal(){
     subpriceElement.innerText= SubTotal;
    sum= sum+SubTotal;
    
-  
    }
    document.getElementById('cart-total').innerHTML=sum;
+  
+   }
+ 
+  
+
+let Removebutton = document.getElementsByClassName('btn btn-danger removebtn');
+console.log('Removebutton:',Removebutton);
+for(let i=0;i<Removebutton.length;i++){
+    var button=Removebutton[i];
+    console.log(button)
+    button.addEventListener('click', removeCartItem)
+
+   } 
+
+   function removeCartItem(event)
+   {
+   var buttonclicked=event.target;
+   buttonclicked.parentElement.parentElement.remove();
+   updateCarteTotal();
    
    }
-   
-let Removebtn = document.getElementsByClassName('btn-danger removebtn');
-console.log('Removebutton:',Removebtn);
-for(let i=0;i<Removebtn.length;i++){
-    var button=Removebtn[i];
-    button.addEventListener('click', function(event){
-    var buttonclicked=event.target;
-    buttonclicked.parentElement.parentElement.parentElement.remove();
-    updateCarteTotal();
-    
-    })
 
-}
+
 
 
 
@@ -113,7 +120,6 @@ function addToCartClicked(event){
 console.log(ImageSrc)
 addItemToCart(title,price,ImageSrc)
 
-
 }
 
 
@@ -138,4 +144,24 @@ function decrement(idinp)
     document.getElementById(idinp).value=QUANTITY
     updateCarteTotal()
    
+}
+
+
+function colorHeart(el)
+{
+if (el.target.style.color!=="red")
+{
+    el.target.style.color="red";
+    console.log('color red')
+}
+else {el.target.style.color="black"}
+
+}
+
+var heart = document.getElementsByClassName("fa fa-heart")
+console.log(heart)
+for(let i=0;i<heart.length;i++)
+{
+    heart[i].addEventListener("click", colorHeart)
+    
 }
