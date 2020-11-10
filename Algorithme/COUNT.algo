@@ -1,0 +1,22 @@
+ALGORITHM COUNT
+VAR
+countLength,countWords,countvowels: integer;
+i:char;
+sentence:string;
+
+BEGIN
+countLength:=0;
+countWords:=0;
+countvowels:=0;
+Read("Enter a sentence",sentence)
+WHILE(sentence[i]!='.') DO
+WHILE(sentence[i]!=' ') DO
+count_Length ++;
+if(sentence[i]=='A' Or sentence[i]=='a' Or sentence[i]=='E' Or sentence[i]=='e' Or sentence[i]=='U' Or sentence[i]=='u' Or sentence[i]=='O' Or sentence[i]=='o' Or sentence[i]=='I' Or sentence[i]=='i') THEN 
+countvowels ++;
+END_IF
+END_WHILE
+countWords ++;
+END_WHILE
+Write("The number of characters is",count_Length,"\n The number of vowels is",countvowels,"\n The number of vowels is",countWords)
+END
