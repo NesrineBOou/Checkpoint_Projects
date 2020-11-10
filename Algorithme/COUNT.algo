@@ -1,7 +1,7 @@
 ALGORITHM COUNT
 VAR
 countLength,countWords,countvowels: integer;
-i:char;
+i:integer;
 sentence:string;
 
 BEGIN
