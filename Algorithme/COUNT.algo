@@ -12,7 +12,7 @@ Read("Enter a sentence",sentence)
 WHILE(sentence[i]!='.') DO
 WHILE(sentence[i]!=' ') DO
 count_Length ++;
-if(sentence[i]=='A' Or sentence[i]=='a' Or sentence[i]=='E' Or sentence[i]=='e' Or sentence[i]=='U' Or sentence[i]=='u' Or sentence[i]=='O' Or sentence[i]=='o' Or sentence[i]=='I' Or sentence[i]=='i') THEN 
+if(sentence.ToUpper[i]=='A' Or sentence.ToUpper[i]=='E' Or sentence.ToUpper[i]=='U' Or sentence.ToUpper[i]=='O' Or sentence.ToUpper[i]=='I') THEN 
 countvowels ++;
 END_IF
 END_WHILE
